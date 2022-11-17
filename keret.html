@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>keret</title>
-
+    
     <style>
-    div{
+        div{
         border: 1px solid black;
-        width: 200px ;
+        width: 200px;
         height: 200px;
-        transition: .5s;
         border-radius: 1%;
-        
-    }
-    .box1{
-        background-color: red;
+        float: left;
+        transition: 0.5s;
+        }
+
+        .box1{
         width: 200px;
         height: 200px;
         float: left;
-    }
-    .box2{
-        background-color: green;
+        }
+
+        .box2{
         width: 200px;
         height: 200px;
         float: left;
-    }
-    .box3{
-        background-color: blue;
-        width: 400px;
-        height: 100px;
-        clear: both;
-    }
+        }
+
+        .box3{
+        width: 200px;
+        height: 200px;
+        float: left;
+        }
+
+        .box4{
+        width: 200px;
+        height: 200px;
+        float: left;
+        }
+
     .box1:hover{
         transform: scale(1.1);
     }
+
     .box2:hover{
         transform: scale(1.1);
     }
+
     .box3:hover{
+        transform: scale(1.1);
+    }
+
+    .box4:hover{
         transform: scale(1.1);
     }
 
     </style>
 </head>
-
 <body>
 
-    <div class="box1">
-        <p>BOX 1</p>
+
+    <div class="box1"> 
+        <img src="img/tavasz.jpg"  alt="" height="200px" width="200px">
+        <p>tavasz</p>
     </div>
 
     <div class="box2">
-        <p>BOX 2</p>
+        <img src="img/nyár.jpg" alt="" height="200px" width="200px">
+        <p>nyár</p>
     </div>
 
     <div class="box3">
-        <p>BOX 3</p>
+        <img src="img/ősz.jpg" alt="" height="200px" width="200px">
+        <p>ősz</p>
     </div>
 
-</body>
+    <div class="box4">
+        <img src="img/tél.jpg" alt="" height="200px" width="200px">
+        <p>tél</p>
+    </div>
 
-</html>
+
+
+</body>
+</html> 
