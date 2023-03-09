@@ -4,61 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pitagorasz tétel számoló</title>
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-        .font1{
-            font-family: 'Gloria Hallelujah', cursive;
-            margin: auto;
-            font-size: 25px;
-        }
-        
-    </style>
+    <title>pitagorasz</title>
 </head>
 <body>
-    <h1 class="font1">Pitagorasz Tétel Számoló</h1>
 
-    <img src="../java.html/images/8TK_03_11abra.png" alt="">
+    <label id="aLabel">Side A:</label><br>
+    <input type="text" id="aTextBox"><br>
+    <label id="bLabel">Side B:</label><br>
+    <input type="text" id="bTextBox"><br>
+    <button type="button" id="submitButton">submit</button><br>
+    <label id="cLabel"></label><br>
 
-    
-
-    <form action=" javasrcipt:void(0)">
-        <fieldset style="width: 50% ;">
-        <br>
-        <legend> Adj meg legalább két oldalt</legend>
-            <label for="a">a oldal</label>
-        <input type="number" name="a oldal :" id="a oldal" oninput="szamol()"> <br>
-            <label for="b">b oldal</label>
-        <input type="number" name="b oldal :" id="b oldal" oninput="szamol()"> <br>
-            <label for="c">c oldal</label>
-        <input type="number" name="c oldal :" id="c oldal" oninput="szamol()"> <br> 
-            
-        <input type="button"  value="TÖRLÉS" onclick="torol()">
-
-        </fieldset>
-    </form>
 
     <script>
-        function szamol() {
-            if (a.value !=0 && b.value !=0) {
-                c.value= Math.sqrt((a.value*a.value)+(b.value*b.value)
-                }
 
+let a;
+let b;
+let c;
 
-        function torol() {
-            a.value = "";
-            b.value = "";
-            c.value = "";
-        }
+document.getElementById("submitButton").onclick = function(){
 
+    a = document.getElementById("aTextBox").value;
+    a = Number(a);
 
+    b = document.getElementById("bTextBox").value;
+    b = Number(b);
 
+    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
 
-        }
+    document.getElementById("cLabel").innerHTML = "Side C: " + c;
+}
 
-        
     </script>
+
 
 </body>
 </html>
